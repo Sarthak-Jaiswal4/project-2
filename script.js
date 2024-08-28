@@ -1,0 +1,18 @@
+window.addEventListener("wheel",function(dets){
+    if(dets.deltaY>0){
+        gsap.to("#manique",{
+            transform:'translateX(-50%)',
+            duration:12,
+            repeat:-1,
+            ease:"none",
+        })
+    }
+    else{
+        gsap.to("#manique",{
+            transform:'translateX(10%)',
+            duration:3.5,
+            repeat:-1,
+            ease:"none",
+        })
+    }
+})
